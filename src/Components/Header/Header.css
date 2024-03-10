@@ -1,0 +1,81 @@
+.user-drop {
+    z-index: 999;
+    overflow-x: hidden;
+    right: -220px;
+    top: 70px;
+    background-color: rgb(255, 255, 255);
+}
+
+.navs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1rem;
+}
+
+.show {
+    right: 0;
+}
+
+.signout {
+    border-top: 1px solid black;
+    margin-top: 12px;
+}
+
+.user-drop:hover+.user-info {
+    display: block;
+}
+
+.animation-nav {
+    margin-left: 12px;
+}
+
+@media screen and (max-width:1330px) {
+    .animation-nav {
+        font-size: 13px;
+        margin-left: 4px;
+    }
+}
+
+.flexs {
+    display: flex !important;
+}
+
+@media screen and (max-width:998px) {
+    .navs {
+        background-color: #04A1A6;
+        top: 19%;
+        display: none;
+        padding: 1.2rem;
+        z-index: 9;
+        justify-content: center;
+        border-radius: 12px;
+        flex-direction: column;
+        gap: 2rem;
+        right: 4px;
+        position: absolute;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+    }
+
+    .show {
+        right: 12px;
+    }
+
+    .user-drop {
+        top: 360px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Serach-Input {
+        width: 200px;
+    }
+
+    .logo-side h2 {
+        font-size: 12px;
+    }
+
+
+}

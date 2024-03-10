@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    /* scroll-behavior: smooth; */
+    overflow-x: hidden !important;
+}
+
+body {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+
+    font-weight: 500;
+    overflow-x: hidden !important;
+}
+.bg2{
+    background-color: #FAA9BA;
+    border-bottom: 1px solid white;
+}
+.bg1{
+    background-color: #72BBEf;
+}
+
+.lh{
+    line-height: 15px;
+}
+.roboto-condensed {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+@media screen and (max-width:520px) {
+    .Serach-Input {
+        width: 134px!important;
+    }
+}
+@media screen and (max-width:768px) {
+    .Onhidden{
+        display: flex;
+        width: 100%;
+    }
+    .onshow{
+        width: 100%;
+    }
+    .tablesmall{
+        width: 700px;
+    }
+    .addinSamall{
+        scroll-snap-type: x mandatory;
+        flex-wrap: nowrap;
+        scroll-behavior: smooth;
+        overflow-x: scroll;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1400px;
+    }
+    .glass{
+        /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .animate-blink {
+    animation: blink 1s infinite; /* Adjust the animation duration as needed */
+  }
+  .main-link{
+    transition: all 0.5s ease;
+    margin-top: 36pc;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
